@@ -38,6 +38,27 @@ class HomePage extends StatelessWidget {
         ),
         // TODO: Add buttons and title (102)
         title: const Text('SHRINE'),
+        // TODO: Add trailing buttons (102)
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(
+              Icons.search,
+              semanticLabel: 'search',
+            ),
+            onPressed: () {
+              print('Search button');
+            },
+          ),
+          IconButton(
+            icon: const Icon(
+              Icons.tune,
+              semanticLabel: 'filter',
+            ),
+            onPressed: () {
+              print('Filter button');
+            },
+          ),
+        ],
       ),
       // TODO: Add app bar (102)
       // TODO: Add a grid view (102)
